@@ -23,8 +23,9 @@ def lornshill():
     print('Not enough higher pupils')
     exit()
   
-  if atNumber ==20:
-    print('Class allocated successfully')
+  if higherCount >=10 and atNumber <=20 and response== 'Y':
+    print()
+    print('Class annocated successfully')
 
   if atNumber > 20:
     sparePlaces = 20 - higherCount
@@ -38,7 +39,7 @@ def lornshill():
       posNumber = posNumber + 1
       if sparePlaces <= 0:
         print('No spaces left')
-    exit()
+      exit()
 
     
   if response != ('Y'):
